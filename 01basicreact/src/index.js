@@ -6,12 +6,13 @@ import App from './App';
 const anotherElement = 'Here is another element';
 const reactElement = React.createElement(
   'a',
-  {href: 'http://google.com', target: '_blank'},
+  {href: 'http://google.com', target: '_blank', id: 'Link'},
   anotherElement
   )
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
-  reactElement
+<>reactElement
+  <App/></>
+  
 );
 
