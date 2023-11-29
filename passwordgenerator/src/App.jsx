@@ -28,7 +28,7 @@ function App() {
 
   const copyemailToClipboard = useCallback(() => {
     emailRef.current?.select();
-    emailRef.current?.setSelectionRange(0, 0);
+    emailRef.current?.setSelectionRange(0, 20);
     window.navigator.clipboard.writeText(email)
   }, [email])
 
@@ -39,7 +39,7 @@ function App() {
     
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-800 text-orange-500">
       <h1 className='text-white text-center my-3'>Email generator</h1><br/>
-      <h2>choose the before part of 'gmail.com' as password</h2>
+      <h2 className='text-white text-center my-3'>choose the before part of 'gmail.com' as password</h2>
     <div className="flex shadow rounded-lg overflow-hidden mb-4">
         <input
             type="text"
